@@ -68,14 +68,13 @@ body {
 }
 
 .download_btn {
-    padding: 8px 50px;
+    padding: 8px 30px;
     color: aliceblue;
     border: 2.5px solid aliceblue;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 4px;
     background-color: transparent;
     transition: all .4s;
-    margin-left: 240px;
 }
 
 .download_btn:hover {
