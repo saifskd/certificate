@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tektur', cursive;
+}
+
+body {
+    background-image: url(./pexels-mateusz-dach-450035.jpg);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+.welcome {
+    position: absolute;
+    height: auto;
+    width: 500px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.7);
+    background-size: cover;
+    height: 100vh;
+
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.menu h1 {
+    font-size: 44px;
+    margin-bottom: 5px;
+
+}
+
+.menu h1 span {
+    color: crimson;
+}
+
+p {
+    color: yellowgreen;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Create_btn {
+    padding: 10px 40px;
+    background: transparent;
+    border: 2PX solid #FFF;
+    font-size: 20px;
+    color: #fff;
+    margin: 20px;
+    border-radius: 4px;
+    transition: all .4s;
+}
+
+.Create_btn:hover {
+    color: #000;
+    background-color: #fff;
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .welcome {
+        position: absolute;
+        width: 280px;
+        top: 35px;
+    }
+
+    .menu h1 {
+        font-size: 38px;
+
+    }
+}

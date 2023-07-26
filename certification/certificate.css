@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tektur', cursive;
+
+}
+
+body {
+    background-image: url(./pexels-mateusz-dach-450035.jpg);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+.certificate_man_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0, 0.7);
+    background-size: cover;
+    height: 100vh;
+
+
+}
+
+.certificate_man_div h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+/* .certificate_man_div h4::first-letter {
+    text-transform: uppercase;
+} */
+
+.certificate_man_div span {
+    position: absolute;
+    left: 155px;
+    bottom: 55px;
+    font-size: 18px;
+}
+
+.relative {
+    position: relative;
+}
+
+
+.certificate {
+    width: auto;
+    border: 2px solid gray;
+    height: 500px;
+}
+
+.download_png {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.download_btn {
+    padding: 10px 60px;
+    background-color: #e2e3e9;
+    color: #100f0f;
+    border-radius: 4px;
+    border: none;
+    transition: all .4s;
+    font-size: 20px;
+}
+
+.download_btn:hover {
+    background-color: #ffff;
+}
+
+.download_png img {
+    width: auto;
+    height: 20px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 450px) {
+
+    .certificate {
+        width: auto;
+        border: 2px solid gray;
+        height: 250px;
+    }
+
+    .certificate_man_div span {
+
+        left: 63px;
+        bottom: 33px;
+        font-size: 12px;
+
+    }
+
+    .certificate_man_div h4 {
+        font-size: 20px;
+        margin-top: 10px;
+
+
+    }
+
+}
+
+@media print {
+    .download_btn {
+        display: none;
+    }
+
+    body {
+        background-color: #e2e3e9;
+    }
+}

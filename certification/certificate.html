@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./certificate.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Certificate</title>
+</head>
+
+<body>
+    <!-- <h1>Hellow</h1> -->
+
+    <div class="certificate_man_div">
+        <div class="relative" id="certificatediv">
+            <h4 id="certificate-name">Md Saif</h4>
+            <span id="dob">15/7/2006</span>
+            <img class="certificate" src="./certificate.png" alt="">
+        </div>
+        <div class="download_png">
+            <button class="download_btn"> DOWLOAD
+                <img src="./download.png" alt="">
+            </button>
+        </div>
+    </div>
+
+
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            var data = new URLSearchParams(window.location.search);
+
+            document.getElementById("certificate-name").innerHTML = data.get("fullname")
+            document.getElementById("dob").innerHTML = data.get("dob")
+        })
+
+        document.querySelector(".download_btn").addEventListener("click", () => window.print())
+    </script>
+</body>
+
+</html>
