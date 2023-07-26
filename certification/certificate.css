@@ -68,24 +68,21 @@ body {
 }
 
 .download_btn {
-    padding: 10px 60px;
-    background-color: #e2e3e9;
-    color: #100f0f;
+    padding: 8px 50px;
+    color: aliceblue;
+    border: 2.5px solid aliceblue;
+    font-size: 16px;
     border-radius: 4px;
-    border: none;
+    background-color: transparent;
     transition: all .4s;
-    font-size: 20px;
+    margin-left: 240px;
 }
 
 .download_btn:hover {
-    background-color: #ffff;
+    color: #000;
+    background-color: #fff;
 }
 
-.download_png img {
-    width: auto;
-    height: 20px;
-    margin-left: 20px;
-}
 
 @media screen and (max-width: 450px) {
 
